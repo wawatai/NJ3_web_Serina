@@ -6,4 +6,32 @@ footer {
     justify-content: space-between;
     background: $main_color;
     padding: 27px;
+
+    .news {
+        width: 50%;
+        height: auto;
+    }
+
+    .partner {
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            width: 100%;
+            height: auto;
+        }
+        .company {
+            width: 100%;
+            height: auto;
+            padding: 0 15px;
+            
+            .clogo {
+                width: auto;
+                height: 35px;
+                display: block;
+            }
+        }
+    }
 }
