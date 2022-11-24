@@ -1,0 +1,19 @@
+// 主色調
+$main_color: #fed600;
+$sub_color: #141414;
+
+//字色
+$main_font: #141414;
+$sub_font: #ffffff;
+
+//線色
+$main_border: $sub_color;
+$sub_border: #ffffff;
+
+//樣式
+@mixin borderBlock {
+    background: #ffffff;
+    border: 1px solid $sub_color;
+    color: $main_font;
+    font-weight: bold;
+}

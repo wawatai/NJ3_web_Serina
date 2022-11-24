@@ -1,0 +1,397 @@
+@charset "UTF-8";
+header .loginArea {
+  background: url(../img/login_BG.png) no-repeat;
+  background-size: contain;
+}
+
+.loginArea .Q_icon {
+  background: url(../img/icon/q_icon.png) no-repeat center;
+  background-size: 100%;
+}
+
+html {
+  background: url(../img/bg1.png) no-repeat center top;
+}
+
+.gameType {
+  background: url(../img/bg2.png) no-repeat center bottom;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+main {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  width: 100%;
+  min-width: 1000px;
+  height: 100%;
+}
+html body {
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+html header {
+  width: 100%;
+  min-width: 1000px;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+html header .loginArea {
+  width: 400px;
+  height: 120px;
+  padding: 16px 45px 16px 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+html header .loginArea form {
+  width: 100%;
+  height: 100%;
+}
+html header .loginArea form .input {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 10px;
+}
+html header .loginArea form .input label:first-child {
+  margin-right: 10px;
+}
+html header .loginArea form .input label input {
+  width: 100%;
+  height: 35px;
+  padding: 0 10px;
+  background: #ffffff;
+  border: 1px solid #141414;
+  color: #141414;
+  font-weight: bold;
+}
+html header .loginArea form .input label input:focus {
+  border: 2px solid #141414;
+}
+html header .loginArea form .buttonBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html header .loginArea form .buttonBox .forgetPW {
+  width: 33%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+html header .loginArea form .buttonBox .forgetPW .Q_icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 5px 0 0;
+}
+html header .loginArea form .buttonBox .forgetPW p {
+  color: #141414;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: underline;
+}
+html header .loginArea form .buttonBox .btnOutter {
+  width: 39%;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #141414;
+  color: #141414;
+  font-weight: bold;
+  margin: 5px;
+  position: relative;
+}
+html header .loginArea form .buttonBox .btnOutter button {
+  width: 110px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  border: 1px solid #141414;
+  color: #141414;
+  font-weight: bold;
+  background: #fed600;
+  border: 2px solid #141414;
+  font-size: 16px;
+  white-space: nowrap;
+  position: absolute;
+  top: -5px;
+  left: -8px;
+}
+html header .loginArea form .buttonBox .btnOutter button:hover, html header .loginArea form .buttonBox .btnOutter button:active, html header .loginArea form .buttonBox .btnOutter button.active {
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html header .loginArea form .buttonBox .btnOutter:last-child button {
+  background: #141414;
+  color: #ffffff;
+}
+html header .top {
+  width: 100%;
+  height: 50%;
+  background: #fed600;
+  padding: 0 20px 0 435px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html header .top .lang {
+  width: 99px;
+  height: 38px;
+  position: absolute;
+  right: 20px;
+  z-index: 5;
+  background: #ffffff;
+  border: 1px solid #141414;
+  color: #141414;
+  font-weight: bold;
+}
+html header .top .lang .content {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 13px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background: #ffffff;
+  border: 1px solid #141414;
+  color: #141414;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}
+html header .top .lang .content p {
+  margin-right: 15px;
+}
+html header .top .lang .content i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #141414 transparent transparent transparent;
+}
+html header .top .lang .content:hover, html header .top .lang .content:active, html header .top .lang .content.active {
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html header .bottom {
+  width: 100%;
+  min-width: 1920px;
+  height: 50%;
+  background: #141414;
+  white-space: nowrap;
+  padding: 0 20px 0 435px;
+}
+html header .bottom ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html header .bottom ul li {
+  width: 11.25%;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 28px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 15px;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+}
+html header .bottom ul li:hover, html header .bottom ul li:active {
+  background: #fed600;
+}
+html header .bottom ul li:hover .content, html header .bottom ul li:active .content {
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #141414;
+  border: 3px solid #ffffff;
+  padding: 20px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-7px, -6px);
+          transform: translate(-7px, -6px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html .ad {
+  width: 100%;
+  height: auto;
+  padding-top: 120px;
+}
+html .mainWrap {
+  width: 100%;
+  height: auto;
+}
+html .mainWrap .hotGame {
+  width: 100%;
+  height: 410px;
+}
+html .mainWrap .gameType {
+  width: 100%;
+  height: 733px;
+}
+html footer {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fed600;
+  padding: 27px;
+}

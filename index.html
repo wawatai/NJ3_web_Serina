@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="./js/js.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <!-- 登入區 -->
+        <div class="loginArea">
+            <form>
+                <div class="input">
+                    <label>
+                        <input name="account" placeholder="アカウント">
+                    </label>
+                    <label>
+                        <input name="password" placeholder="パスワード">
+                    </label>
+                </div>
+                <div class="buttonBox">
+                    <div class="forgetPW">
+                        <i class="Q_icon"></i>
+                        <p>パスワード紛失</p>
+                    </div>
+                    <div class="btnOutter">
+                        <button class="logIN" type="submit">サインイン</button>
+                    </div>
+                    <div class="btnOutter">
+                        <button class="signUP" type="button">登録済み</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- 上部 -->
+        <div class="top">
+            <img class="logo" src="./img/LOGO.png">
+            <div class="lang">
+                <div class="content">
+                    <p>日本語</p>
+                <i class="arrow"></i>
+                <ul class="dropList">
+                    <li></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 下部 -->
+        <div class="bottom">
+            <ul>
+                <li>
+                    <div class="content">
+                        <p>ホーム</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <p>スポーツ</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <p>ライブ</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <p>スロット</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <p>釣りゲーム</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <p>テーブルゲーム</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <p>プロモーション</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                        <p>VIPメンバー</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- banner輪播 -->
+    <div class="ad swiper">
+        <div class="wrapper">
+            <div class="banner swiper-slide">
+                <img class="bannerA" src="./img/banner.png">
+            </div>
+        </div>
+    </div>
+    <div class="mainWrap">
+        <!-- 熱門遊戲 -->
+        <div class="hotGame">
+            <div class="hotgameTitle">                
+                <p><span>H</span>OT GAMES</p>
+            </div>
+            <div class="hotgame swiper">
+                <div class="outter swiper-slide">
+                    <div class="gameBox">
+                        <div class="picArea">
+                            <div class="picBox"></div>
+                        </div>
+                        <div class="textArea">
+                            <p>STICKY PIGGY</p>
+                        </div>
+                    </div>
+                    <div class="gameBox">
+                        <div class="picArea">
+                            <div class="picBox"></div>
+                        </div>
+                        <div class="textArea">
+                            <p>SPIRIT HUNTERS</p>
+                        </div>
+                    </div>
+                    <div class="gameBox">
+                        <div class="picArea">
+                            <div class="picBox"></div>
+                        </div>
+                        <div class="textArea">
+                            <p>6 WILD SHARKS</p>
+                        </div>
+                    </div>
+                    <div class="gameBox">
+                        <div class="picArea">
+                            <div class="picBox"></div>
+                        </div>
+                        <div class="textArea">
+                            <p>WORLD CUP</p>
+                        </div>
+                    </div>
+                    <div class="gameBox">
+                        <div class="picArea">
+                            <div class="picBox"></div>
+                        </div>
+                        <div class="textArea">
+                            <p>BURNING FORTUNATOR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 遊戲類別入口 -->
+        <div class="gameType">
+            <div class="left">
+                <div class="live">
+                    <div class="block"></div>
+                    <div class="textBox">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="sport">
+                    <div class="block"></div>
+                    <div class="textBox">
+                        <p>スポーツ</p>
+                    </div>
+                </div>
+                <div class="fish">
+                    <div class="block"></div>
+                    <div class="textBox">
+                        <p>釣りゲーム</p>
+                    </div>
+                </div>
+                <div class="slot">
+                    <div class="block"></div>
+                    <div class="textBox">
+                        <p>スロット</p>
+                    </div>
+                </div>
+                <div class="board">
+                    <div class="block"></div>
+                    <div class="textBox">
+                        <p>テーブル</p>
+                        <p>ゲーム</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="news">
+            <div class="thempage">
+                <div class="top">
+                    <div class="short">
+                        <div class="content">
+                            <div class="themTitle"></div>
+                            <ul>
+                                <li>
+                                    <i class="arrow"></i>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <i class="arrow"></i>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="long">
+                        <div class="content">
+                            <div class="themTitle"></div>
+                            <ul>
+                                <li>
+                                    <i class="arrow"></i>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <i class="arrow"></i>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="long">
+                        <div class="content">
+                            <div class="themTitle"></div>
+                            <ul>
+                                <li>
+                                    <i class="arrow"></i>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <i class="arrow"></i>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="short">
+                        <div class="content">
+                            <div class="themTitle"></div>
+                            <ul>
+                                <li>
+                                    <i class="arrow"></i>
+                                    <p></p>
+                                </li>
+                                <li>
+                                    <i class="arrow"></i>
+                                    <p></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutUS">
+                <div class="btn">
+                    <button type="button">チャット</button>
+                    <button type="button"></button>
+                </div>
+                <div class="social">
+                    <div class="line"></div>
+                    <div class="fb"></div>
+                    <div class="twi"></div>
+                    <div class="yt"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 合作品牌 -->
+        <div class="partner">
+            <div class="title">
+                <p>ゲームプロバイダー</p>
+                <div class="deco"></div>
+                <i class="arrow_deco"></i>
+            </div>
+            <div class="company">
+                <div class="clogo"></div>
+            </div>
+            <div class="copyright">
+                <i class="arrow_deco"></i>
+                <p>© 2022 MANEKI Affiliates. すべての権利を保有しています。</p>
+                <i class="arrow_deco"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
