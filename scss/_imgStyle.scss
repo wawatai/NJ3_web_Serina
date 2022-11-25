@@ -9,29 +9,200 @@ header .loginArea {
     background-size: 100%;
 }
 
-//
-.clogo .net {
+//hotgame
+.hotgameTitle p::before,
+.hotgameTitle p::after {
+    background: url(../img/hotgame_TitleDeco.png) no-repeat center;
+    background-size: 100%;
+}
+
+.picBox.STICKY {
+    background: url(../img/gamePic/STICKY\ PIGGY.png) no-repeat center;
+    background-size: cover;
+}
+.picBox.SPIRIT {
+    background: url(../img/gamePic/SPIRIT\ HUNTERS.png) no-repeat center;
+    background-size: cover;
+}
+.picBox.WILD {
+    background: url(../img/gamePic//6\ WILD\ SHARKS.png) no-repeat center;
+    background-size: cover;
+}
+.picBox.WORLD {
+    background: url(../img/gamePic/WORLD\ CUP.png) no-repeat center;
+    background-size: cover;
+}
+.picBox.BURNING {
+    background: url(../img/gamePic/BURNING\ FORTUNATOR.png) no-repeat center;
+    background-size: cover;
+}
+
+//footer partner
+footer .arrow_deco {
+    background: url(../img/ftitle_deco.png) no-repeat center;
+    background-size: 100%;
+}
+
+footer .thempage .box {
+    background: url(../img/them_shadow.png) no-repeat top;
+    background-size: 100%;
+}
+footer .line {
+    background: url(../img/LINE.png) no-repeat center;
+    background-size: 100%;
+}
+footer .fb {
+    background: url(../img/FACEBOOK.png) no-repeat center;
+    background-size: 100%;
+}
+footer .twi {
+    background: url(../img/TWITTER.png) no-repeat center;
+    background-size: 100%;
+}
+footer .yt {
+    background: url(../img/YOUTUBE.png) no-repeat center;
+    background-size: 100%;
+}
+footer .copyright p::before,
+footer .copyright p::after {
+    background: url(../img/copyright_deco.png) no-repeat center;
+    background-size: 100%;
+}
+
+.clogo.net {
     background: url(../img/cooperation/NETENT.png) no-repeat center;
     background-size: 100%;
 }
-.clogo .jili {
-    background: url(../img/cooperation/NETENT.png) no-repeat center;
+.clogo.jili {
+    background: url(../img/cooperation/JILI.png) no-repeat center;
     background-size: 100%;
 }
-.clogo .sp {
+.clogo.sp {
     background: url(../img/cooperation/SP.png) no-repeat center;
     background-size: 100%;
 }
-.clogo .og {
+.clogo.og {
     background: url(../img/cooperation/OG.png) no-repeat center;
     background-size: 100%;
 }
-.clogo .qs {
+.clogo.qs {
     background: url(../img/cooperation/QUICKSPIN.png) no-repeat center;
     background-size: 100%;
 }
-.clogo .auxx {
+.clogo.auxx {
     background: url(../img/cooperation/auxx.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.sa {
+    background: url(../img/cooperation/sa.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.elk {
+    background: url(../img/cooperation/ELK.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.bluep {
+    background: url(../img/cooperation/BLUEPRINT.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.evlout {
+    background: url(../img/cooperation/EVO.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.tpg {
+    background: url(../img/cooperation/TPG.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.rsg {
+    background: url(../img/cooperation/RSG.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.ag {
+    background: url(../img/cooperation/AG.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.player {
+    background: url(../img/cooperation/4THEPLAYER.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.ab {
+    background: url(../img/cooperation/AB.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.pls {
+    background: url(../img/cooperation/PLS.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.pg {
+    background: url(../img/cooperation/PG.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.png {
+    background: url(../img/cooperation/PNG.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.micro {
+    background: url(../img/cooperation/MG.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.pp {
+    background: url(../img/cooperation/PP.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.redrake {
+    background: url(../img/cooperation/REDRAKE.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.gh {
+    background: url(../img/cooperation/GOLDEN\ HERO.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.ygg {
+    background: url(../img/cooperation/YGG.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.rela {
+    background: url(../img/cooperation/RELAX.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.rt {
+    background: url(../img/cooperation/RED\ TIGER.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.bng {
+    background: url(../img/cooperation/BNG.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.wm {
+    background: url(../img/cooperation/WM.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.ball36 {
+    background: url(../img/cooperation/36588.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.b36 {
+    background: url(../img/cooperation/36588.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.ifun {
+    background: url(../img/cooperation/IFUN.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.ely {
+    background: url(../img/cooperation/ELY.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.nolimt {
+    background: url(../img/cooperation/NOLIMIT.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.evo {
+    background: url(../img/cooperation/EVO.png) no-repeat center;
+    background-size: 100%;
+}
+.clogo.dg {
+    background: url(../img/cooperation/DG.png) no-repeat center;
     background-size: 100%;
 }
 

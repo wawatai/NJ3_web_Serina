@@ -1,6 +1,7 @@
 // 主色調
 $main_color: #fed600;
 $sub_color: #141414;
+$sub02_color: #ffffff;
 
 //字色
 $main_font: #141414;
@@ -16,4 +17,46 @@ $sub_border: #ffffff;
     border: 1px solid $sub_color;
     color: $main_font;
     font-weight: bold;
+}
+
+@mixin themeTag {
+    width: 172px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    background: $main_color;
+    border: 2px solid $main_border;
+    padding: 0 10px;
+    color: $main_font;
+    font-size: 20px;
+    font-weight: bold;
+    filter: drop-shadow(3px 2px 0.5px $main_border);
+    position: absolute;
+    top: 20px;
+    left: -2px;
+
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width:  20px 16px 0 0px;
+        border-color: $main_color transparent transparent transparent;
+        filter: drop-shadow(3px -2px 0.5px $main_border);
+        position: absolute;
+        top: 0;
+        right: -15px;
+    }
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width:  0 16px 20px 0px;
+        border-color: transparent transparent $main_color transparent;
+        filter: drop-shadow(3px 2px 0.5px $main_border);
+        position: absolute;
+        bottom: 0;
+        right: -15px;
+    }
 }
