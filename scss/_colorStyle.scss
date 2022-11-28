@@ -11,6 +11,18 @@ $sub_font: #ffffff;
 $main_border: $sub_color;
 $sub_border: #ffffff;
 
+//gameType BtnColor
+$live_Btn: #f56fbe;
+$live_lightBtn: #fe93d2;
+$sport_Btn: #30c54f;
+$sport_lightBtn: #56e074;
+$fish_Btn: #b466fe;
+$fish_lightBtn: #c88eff;
+$slot_Btn: #3db9fa;
+$slot_lightBtn: #6ad4fb;
+$board_Btn: #f88b2a;
+$board_lightBtn: #ffa04b;
+
 //樣式
 @mixin borderBlock {
     background: #ffffff;
@@ -19,6 +31,7 @@ $sub_border: #ffffff;
     font-weight: bold;
 }
 
+//footer 左側標題標籤
 @mixin themeTag {
     width: 172px;
     height: 37px;

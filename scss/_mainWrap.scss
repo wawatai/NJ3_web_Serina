@@ -137,6 +137,246 @@
     .gameType {
         width: 100%;
         height: 733px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 110px;
+
+        .left {
+            width: 35%;
+            height: 100%;
+
+            .live {
+                width: 95%;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+
+                &:hover,&:active,&.active {
+                    .block {
+                        transform: scale(1.12);
+                        transition: 0.6s;
+                    }
+
+                    .textBox {
+                        animation: bounce 2s 0.3s ease-in-out infinite;
+
+                        p {
+                            color: $sub_font;
+                            text-shadow: 0px 0px 5px $sub_font;
+                        }
+
+                        &::before { 
+                            animation: bounce 3s 0.3s ease-in-out infinite;
+                        }
+                    }
+
+                    @keyframes bounce {
+                        0% {
+                            border-radius: 496px 340px 315px 143px;
+                            transform: scale(0.9);
+                        }
+                        30% {
+                            border-radius: 1223px 553px 1003px 227px;
+                            transform: scale(1.1);
+                        }
+                        60% {
+                            border-radius: 836px 485px 538px 109px;
+                            transform: scale(0.9);
+                        }
+                        90% {
+                            border-radius: 635px 786px 234px 109px;
+                            transform: scale(0.9);
+                        }
+                        100% {
+                            border-radius: 344px 485px 157px 109px;
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+
+            .block {
+                width: 95%;
+                height: 96%;
+                position: absolute;
+                right: 0;
+            }
+
+            .textBox {
+                width: 290px;
+                height: 217px;
+                background: $live_Btn;
+                padding: 67px 118px;
+                filter: drop-shadow(13px -11px 0.5px $sub_color);
+                position: absolute;
+                border-radius: 456px 283px 299px 82px;
+                left: -52px;
+                bottom: -76px;
+                z-index: 5;
+
+                p {
+                    color: $main_font;
+                    font-size: 30px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    text-align: center;
+                    position: relative;
+                    z-index: 10;
+                }
+
+                &::before {
+                    content: "";
+                    width: 234px;
+                    height: 195px;
+                    background: $live_lightBtn;
+                    border-radius: 755px 421px 611px 227px;
+                    position: absolute;
+                    top: 10px;
+                    right: 21px;
+                }
+            }
+        }     
         
+        .right {
+            width: 65%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            gap: 3% 2.5%;
+            
+            .typeOutter {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+
+                &:hover,&:active,&.active {
+                    .block {
+                        transform: scale(1.12);
+                        transition: 0.6s;
+                    }
+
+                    .textBox {
+                        animation: bounce 2s 0.3s ease-in-out infinite;
+
+                        p {
+                            color: $sub_font;
+                            text-shadow: 0px 0px 5px $sub_font;
+                        }
+
+
+                        &::before { 
+                            animation: bounce 3s 0.3s ease-in-out infinite;
+                        }
+                    }
+
+                    @keyframes bounce {
+                        0% {
+                            border-radius: 344px 485px 157px 109px;
+                            transform: scale(0.9);
+                        }
+                        30% {
+                            border-radius: 642px 664px 77px 36px;
+                            transform: scale(1.1);
+                        }
+                        60% {
+                            border-radius: 836px 485px 538px 109px;
+                            transform: scale(0.9);
+                        }
+                        90% {
+                            border-radius: 635px 786px 234px 109px;
+                            transform: scale(0.9);
+                        }
+                        100% {
+                            border-radius: 344px 485px 157px 109px;
+                        }
+                    }
+                }
+
+                &.sport {
+
+                    .textBox {
+                        background: $sport_Btn;
+    
+                        &::before {
+                            background: $sport_lightBtn;
+                        }
+                    }
+                }
+                &.fish {
+    
+                    .textBox {
+                        background: $fish_Btn;
+    
+                        &::before {
+                            background: $fish_lightBtn;
+                        }
+                    }
+                }
+                &.slot {
+    
+                    .textBox {
+                        background: $slot_Btn;
+    
+                        &::before {
+                            background: $slot_lightBtn;
+                        }
+                    }
+                }
+                &.board {
+                
+                    .textBox {
+                        background: $board_Btn;
+    
+                        &::before {
+                            background: $board_lightBtn;
+                        }
+                    }
+                }
+            }
+
+            .block {
+                width: 95%;
+                height: 92%;
+                position: absolute;
+                right: 0;
+                z-index: 2;
+            }
+
+            .textBox {
+                width: 291px;
+                height: 219px;
+                border-radius: 344px 485px 157px 109px;
+                padding: 50px 63px;
+                filter: drop-shadow(17px -6px 0.5px $sub_color);
+                position: absolute;
+                left: -43px;
+                bottom: -97px;
+                z-index: 5;
+
+                p {
+                    color: $main_font;
+                    font-size: 30px;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    text-align: center;
+                    position: relative;
+                    z-index: 10;
+                }
+
+                &::before {
+                    content: "";
+                    width: 230px;
+                    height: 195px;
+                    border-radius: 344px 520px 261px 424px;
+                    position: absolute;
+                    top: 15px;
+                    right: 37px;
+                }
+            }
+        }
     }
 }

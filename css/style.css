@@ -9,6 +9,16 @@ header .loginArea {
   background-size: 100%;
 }
 
+.marquee .outter_deco .bDeco {
+  background: url(../img/them_shadow.png) no-repeat top;
+  background-size: 400%;
+}
+
+.marquee .title .arrow_deco {
+  background: url(../img/hotgame_TitleDeco.png) no-repeat left;
+  background-size: 150%;
+}
+
 .hotgameTitle p::before,
 .hotgameTitle p::after {
   background: url(../img/hotgame_TitleDeco.png) no-repeat center;
@@ -37,6 +47,31 @@ header .loginArea {
 
 .picBox.BURNING {
   background: url(../img/gamePic/BURNING\ FORTUNATOR.png) no-repeat center;
+  background-size: cover;
+}
+
+.gameType .live .block {
+  background: url(../img/gameType/live.png) no-repeat center;
+  background-size: cover;
+}
+
+.gameType .sport .block {
+  background: url(../img/gameType/sport.png) no-repeat center;
+  background-size: cover;
+}
+
+.gameType .fish .block {
+  background: url(../img/gameType/fish.png) no-repeat center;
+  background-size: cover;
+}
+
+.gameType .slot .block {
+  background: url(../img/gameType/slot.png) no-repeat center;
+  background-size: cover;
+}
+
+.gameType .board .block {
+  background: url(../img/gameType/board.png) no-repeat center;
   background-size: cover;
 }
 
@@ -602,8 +637,191 @@ html header .bottom ul li:hover .content, html header .bottom ul li:active .cont
 }
 html .ad {
   width: 100%;
+  height: 50%;
+  margin-top: 120px;
+  position: relative;
+}
+html .ad.swiper {
+  position: relative;
+  --swiper-navigation-color: transparent; /* 单独设置按钮颜色 */
+  --swiper-navigation-size: 40px; /* 设置按钮大小 */
+  --swiper-pagination-color: #0000; /* 两种都可以 */
+  --swiper-theme-color: #ff6600;
+}
+html .ad.swiper .swiper-button-prev {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #141414 transparent transparent;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  top: 122px;
+  left: 23px;
+}
+html .ad.swiper .swiper-button-next {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #141414 transparent transparent;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  position: absolute;
+  top: 340px;
+  left: 23px;
+}
+html .ad.swiper .swiper-pagination {
+  width: 27px;
+  height: 170px;
+  position: absolute;
+  left: 15px;
+  z-index: 10;
+}
+html .marquee {
+  width: 350px;
+  height: 384px;
+  background: #ffffff;
+  padding: 27px 37px 27px 20px;
+  position: absolute;
+  top: 45px;
+  right: 54px;
+  z-index: 50;
+}
+html .marquee .outter_deco {
+  width: 350px;
+  height: 384px;
+  border: 3px solid #141414;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+html .marquee .outter_deco .yDeco {
+  width: 69px;
+  height: 69px;
+  background: #fed600;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 30px;
+  right: -50px;
+  z-index: 5;
+}
+html .marquee .outter_deco .bDeco {
+  width: 115px;
+  height: 115px;
+  border-radius: 100px;
+  overflow: hidden;
+  position: absolute;
+  bottom: -37px;
+  right: -35px;
+  z-index: 10;
+}
+html .marquee .outter_deco .cover {
+  width: 113px;
+  height: 125px;
+  background: #ffffff;
+  border-radius: 50px 0 0 0;
+  position: absolute;
+  bottom: -10px;
+  right: -18px;
+  z-index: 1;
+}
+html .marquee .outter_deco::before {
+  content: "";
+  width: 3px;
+  height: 15px;
+  background: #141414;
+  border-radius: 10px;
+  position: absolute;
+  top: 20px;
+  left: 82px;
+}
+html .marquee .outter_deco::after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background: #141414;
+  border-radius: 10px;
+  position: absolute;
+  top: 25.5px;
+  left: 76px;
+}
+html .marquee .title {
+  width: 100%;
   height: auto;
-  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .marquee .title p {
+  color: #141414;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  position: relative;
+}
+html .marquee .title p .first {
+  font-size: 25px;
+}
+html .marquee .title p .deco {
+  width: 48px;
+  height: 48px;
+  background: #fed600;
+  border-radius: 50px;
+  position: absolute;
+  top: -14px;
+  left: -8px;
+  z-index: -1;
+}
+html .marquee .title .deco_line {
+  width: 100%;
+  height: 2px;
+  margin: 5px 10px 0px 10px;
+  background: #141414;
+}
+html .marquee .title .arrow_deco {
+  width: 200px;
+  height: 17px;
+  margin: 5px 0px 0px;
+  overflow: hidden;
+}
+html .marquee .textBox {
+  width: 100%;
+  height: 285px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+html .marquee .textBox .content {
+  color: #141414;
+  font-size: 18px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  -webkit-animation: toTop 5s linear infinite;
+          animation: toTop 5s linear infinite;
+}
+@-webkit-keyframes toTop {
+  0% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+  100% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+}
+@keyframes toTop {
+  0% {
+    -webkit-transform: translateY(500%);
+            transform: translateY(500%);
+  }
+  100% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
 }
 html .mainWrap {
   width: 100%;
@@ -745,6 +963,257 @@ html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox .textArea p {
 html .mainWrap .gameType {
   width: 100%;
   height: 733px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 110px;
+}
+html .mainWrap .gameType .left {
+  width: 35%;
+  height: 100%;
+}
+html .mainWrap .gameType .left .live {
+  width: 95%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+html .mainWrap .gameType .left .live:hover .block, html .mainWrap .gameType .left .live:active .block, html .mainWrap .gameType .left .live.active .block {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+html .mainWrap .gameType .left .live:hover .textBox, html .mainWrap .gameType .left .live:active .textBox, html .mainWrap .gameType .left .live.active .textBox {
+  -webkit-animation: bounce 2s 0.3s ease-in-out infinite;
+          animation: bounce 2s 0.3s ease-in-out infinite;
+}
+html .mainWrap .gameType .left .live:hover .textBox p, html .mainWrap .gameType .left .live:active .textBox p, html .mainWrap .gameType .left .live.active .textBox p {
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #ffffff;
+}
+html .mainWrap .gameType .left .live:hover .textBox::before, html .mainWrap .gameType .left .live:active .textBox::before, html .mainWrap .gameType .left .live.active .textBox::before {
+  -webkit-animation: bounce 3s 0.3s ease-in-out infinite;
+          animation: bounce 3s 0.3s ease-in-out infinite;
+}
+@-webkit-keyframes bounce {
+  0% {
+    border-radius: 496px 340px 315px 143px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  30% {
+    border-radius: 1223px 553px 1003px 227px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  60% {
+    border-radius: 836px 485px 538px 109px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  90% {
+    border-radius: 635px 786px 234px 109px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    border-radius: 344px 485px 157px 109px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes bounce {
+  0% {
+    border-radius: 496px 340px 315px 143px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  30% {
+    border-radius: 1223px 553px 1003px 227px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  60% {
+    border-radius: 836px 485px 538px 109px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  90% {
+    border-radius: 635px 786px 234px 109px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    border-radius: 344px 485px 157px 109px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+html .mainWrap .gameType .left .block {
+  width: 95%;
+  height: 96%;
+  position: absolute;
+  right: 0;
+}
+html .mainWrap .gameType .left .textBox {
+  width: 290px;
+  height: 217px;
+  background: #f56fbe;
+  padding: 67px 118px;
+  -webkit-filter: drop-shadow(13px -11px 0.5px #141414);
+          filter: drop-shadow(13px -11px 0.5px #141414);
+  position: absolute;
+  border-radius: 456px 283px 299px 82px;
+  left: -52px;
+  bottom: -76px;
+  z-index: 5;
+}
+html .mainWrap .gameType .left .textBox p {
+  color: #141414;
+  font-size: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+html .mainWrap .gameType .left .textBox::before {
+  content: "";
+  width: 234px;
+  height: 195px;
+  background: #fe93d2;
+  border-radius: 755px 421px 611px 227px;
+  position: absolute;
+  top: 10px;
+  right: 21px;
+}
+html .mainWrap .gameType .right {
+  width: 65%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 2.5% 50%;
+  grid-template-columns: repeat(2, 50%);
+  gap: 3% 2.5%;
+}
+html .mainWrap .gameType .right .typeOutter {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+html .mainWrap .gameType .right .typeOutter:hover .block, html .mainWrap .gameType .right .typeOutter:active .block, html .mainWrap .gameType .right .typeOutter.active .block {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+html .mainWrap .gameType .right .typeOutter:hover .textBox, html .mainWrap .gameType .right .typeOutter:active .textBox, html .mainWrap .gameType .right .typeOutter.active .textBox {
+  -webkit-animation: bounce 2s 0.3s ease-in-out infinite;
+          animation: bounce 2s 0.3s ease-in-out infinite;
+}
+html .mainWrap .gameType .right .typeOutter:hover .textBox p, html .mainWrap .gameType .right .typeOutter:active .textBox p, html .mainWrap .gameType .right .typeOutter.active .textBox p {
+  color: #ffffff;
+  text-shadow: 0px 0px 5px #ffffff;
+}
+html .mainWrap .gameType .right .typeOutter:hover .textBox::before, html .mainWrap .gameType .right .typeOutter:active .textBox::before, html .mainWrap .gameType .right .typeOutter.active .textBox::before {
+  -webkit-animation: bounce 3s 0.3s ease-in-out infinite;
+          animation: bounce 3s 0.3s ease-in-out infinite;
+}
+@keyframes bounce {
+  0% {
+    border-radius: 344px 485px 157px 109px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  30% {
+    border-radius: 642px 664px 77px 36px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  60% {
+    border-radius: 836px 485px 538px 109px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  90% {
+    border-radius: 635px 786px 234px 109px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    border-radius: 344px 485px 157px 109px;
+  }
+}
+html .mainWrap .gameType .right .typeOutter.sport .textBox {
+  background: #30c54f;
+}
+html .mainWrap .gameType .right .typeOutter.sport .textBox::before {
+  background: #56e074;
+}
+html .mainWrap .gameType .right .typeOutter.fish .textBox {
+  background: #b466fe;
+}
+html .mainWrap .gameType .right .typeOutter.fish .textBox::before {
+  background: #c88eff;
+}
+html .mainWrap .gameType .right .typeOutter.slot .textBox {
+  background: #3db9fa;
+}
+html .mainWrap .gameType .right .typeOutter.slot .textBox::before {
+  background: #6ad4fb;
+}
+html .mainWrap .gameType .right .typeOutter.board .textBox {
+  background: #f88b2a;
+}
+html .mainWrap .gameType .right .typeOutter.board .textBox::before {
+  background: #ffa04b;
+}
+html .mainWrap .gameType .right .block {
+  width: 95%;
+  height: 92%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+html .mainWrap .gameType .right .textBox {
+  width: 291px;
+  height: 219px;
+  border-radius: 344px 485px 157px 109px;
+  padding: 50px 63px;
+  -webkit-filter: drop-shadow(17px -6px 0.5px #141414);
+          filter: drop-shadow(17px -6px 0.5px #141414);
+  position: absolute;
+  left: -43px;
+  bottom: -97px;
+  z-index: 5;
+}
+html .mainWrap .gameType .right .textBox p {
+  color: #141414;
+  font-size: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+html .mainWrap .gameType .right .textBox::before {
+  content: "";
+  width: 230px;
+  height: 195px;
+  border-radius: 344px 520px 261px 424px;
+  position: absolute;
+  top: 15px;
+  right: 37px;
 }
 html footer {
   width: 100%;
@@ -906,6 +1375,7 @@ html footer .news .thempage .wrap .box .content ul li i {
 html footer .news .thempage .wrap .box .content ul li:hover, html footer .news .thempage .wrap .box .content ul li:active, html footer .news .thempage .wrap .box .content ul li.active {
   background: #141414;
   color: #ffffff;
+  text-shadow: 0px 0px 5px #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -937,6 +1407,9 @@ html footer .news .thempage .wrap .box:first-child.short ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+html footer .news .thempage .wrap .box:first-child.short ul li {
+  width: 50%;
 }
 html footer .news .aboutUS {
   width: 100%;
