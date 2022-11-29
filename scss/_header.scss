@@ -169,7 +169,7 @@ header {
 
     .bottom {
         width: 100%;
-        min-width: 1920px;
+        min-width: 1000px;
         height: 50%;
         background: $sub_color;
         white-space: nowrap;
@@ -210,6 +210,8 @@ header {
                         background: $sub_color;
                         border: 3px solid $sub_border;
                         padding: 20px 30px;
+                        white-space: nowrap;
+                        overflow: hidden;
                         position: absolute;
                         top: 0;
                         left: 0;

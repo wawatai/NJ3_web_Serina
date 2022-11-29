@@ -1,4 +1,39 @@
 @charset "UTF-8";
+@media only screen and (max-width: 1860px) {
+  header .bottom ul li .content {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1795px) {
+  header .bottom ul li .content {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  header .bottom {
+    padding: 0 20px 0 408px;
+  }
+  header .bottom ul li {
+    overflow: hidden;
+  }
+  header .bottom ul li .content {
+    font-size: 14px;
+  }
+  header .bottom ul li .content:hover .content, header .bottom ul li .content:active .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(7px, 6px);
+            transform: translate(7px, 6px);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+@media only screen and (max-width: 1570px) {
+  .marquee {
+    display: none;
+  }
+}
 header .loginArea {
   background: url(../img/login_BG.png) no-repeat;
   background-size: contain;
@@ -572,7 +607,7 @@ html header .top .lang .content:hover, html header .top .lang .content:active, h
 }
 html header .bottom {
   width: 100%;
-  min-width: 1920px;
+  min-width: 1000px;
   height: 50%;
   background: #141414;
   white-space: nowrap;
@@ -627,6 +662,8 @@ html header .bottom ul li:hover .content, html header .bottom ul li:active .cont
   background: #141414;
   border: 3px solid #ffffff;
   padding: 20px 30px;
+  white-space: nowrap;
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -645,8 +682,10 @@ html .ad.swiper {
   position: relative;
   --swiper-navigation-color: transparent; /* 单独设置按钮颜色 */
   --swiper-navigation-size: 40px; /* 设置按钮大小 */
-  --swiper-pagination-color: #0000; /* 两种都可以 */
-  --swiper-theme-color: #ff6600;
+}
+html .ad.swiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
 }
 html .ad.swiper .swiper-button-prev {
   width: 0;
@@ -673,11 +712,35 @@ html .ad.swiper .swiper-button-next {
   left: 23px;
 }
 html .ad.swiper .swiper-pagination {
-  width: 27px;
-  height: 170px;
+  width: auto !important;
+  left: auto !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
-  left: 15px;
+  top: 219px;
+  right: 1866px;
   z-index: 10;
+}
+html .ad.swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+  text-align: center;
+  font-size: 12px;
+  opacity: 1;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.4784313725);
+  cursor: pointer;
+}
+html .ad.swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffffff;
 }
 html .marquee {
   width: 350px;
@@ -718,14 +781,24 @@ html .marquee .outter_deco .bDeco {
   z-index: 10;
 }
 html .marquee .outter_deco .cover {
-  width: 113px;
-  height: 125px;
+  width: 101px;
+  height: 99px;
   background: #ffffff;
-  border-radius: 50px 0 0 0;
+  border-radius: 228px 0 0 0;
   position: absolute;
   bottom: -10px;
-  right: -18px;
+  right: -12px;
   z-index: 1;
+}
+html .marquee .outter_deco .cover::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50px 0 0 50px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 91px;
+  right: -6px;
 }
 html .marquee .outter_deco::before {
   content: "";
@@ -896,6 +969,37 @@ html .mainWrap .hotGame .hott {
   width: 100%;
   height: 100%;
 }
+html .mainWrap .hotGame .hott.swiperHG {
+  position: relative;
+  --swiper-navigation-color: transparent; /* 单独设置按钮颜色 */
+  --swiper-navigation-size: 40px; /* 设置按钮大小 */
+}
+html .mainWrap .hotGame .hott.swiperHG .outter {
+  position: relative;
+}
+html .mainWrap .hotGame .hott.swiperHG .outter .swiper-wrapper {
+  overflow: hidden;
+}
+html .mainWrap .hotGame .hott.swiperHG .outter .swiper-button-prev {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 25px 15px 0;
+  border-color: transparent #141414 transparent transparent;
+  position: absolute;
+  top: 103px;
+  left: -71px;
+}
+html .mainWrap .hotGame .hott.swiperHG .outter .swiper-button-next {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 25px;
+  border-color: transparent transparent transparent #141414;
+  position: absolute;
+  top: 103px;
+  right: -71px;
+}
 html .mainWrap .hotGame .hott .outter .swiper-wrapper {
   width: 100%;
   height: 100%;
@@ -997,7 +1101,6 @@ html .mainWrap .gameType .left .live:hover .textBox, html .mainWrap .gameType .l
 }
 html .mainWrap .gameType .left .live:hover .textBox p, html .mainWrap .gameType .left .live:active .textBox p, html .mainWrap .gameType .left .live.active .textBox p {
   color: #ffffff;
-  text-shadow: 0px 0px 5px #ffffff;
 }
 html .mainWrap .gameType .left .live:hover .textBox::before, html .mainWrap .gameType .left .live:active .textBox::before, html .mainWrap .gameType .left .live.active .textBox::before {
   -webkit-animation: bounce 3s 0.3s ease-in-out infinite;
@@ -1123,7 +1226,6 @@ html .mainWrap .gameType .right .typeOutter:hover .textBox, html .mainWrap .game
 }
 html .mainWrap .gameType .right .typeOutter:hover .textBox p, html .mainWrap .gameType .right .typeOutter:active .textBox p, html .mainWrap .gameType .right .typeOutter.active .textBox p {
   color: #ffffff;
-  text-shadow: 0px 0px 5px #ffffff;
 }
 html .mainWrap .gameType .right .typeOutter:hover .textBox::before, html .mainWrap .gameType .right .typeOutter:active .textBox::before, html .mainWrap .gameType .right .typeOutter.active .textBox::before {
   -webkit-animation: bounce 3s 0.3s ease-in-out infinite;
@@ -1383,6 +1485,12 @@ html footer .news .thempage .wrap .box .content ul li:hover i, html footer .news
   -webkit-filter: brightness(100);
           filter: brightness(100);
 }
+@media only screen and (max-width: 1000px) {
+  html footer .news .thempage .wrap .box .content ul li {
+    font-size: 12px;
+    padding: 0px;
+  }
+}
 html footer .news .thempage .wrap .box .content:hover, html footer .news .thempage .wrap .box .content:active, html footer .news .thempage .wrap .box .content.active {
   -webkit-transform: translate(-10px, -10px);
           transform: translate(-10px, -10px);
@@ -1399,6 +1507,18 @@ html footer .news .thempage .wrap .box .content:hover .themTitle::before, html f
 html footer .news .thempage .wrap .box .content:hover .themTitle::after, html footer .news .thempage .wrap .box .content:active .themTitle::after, html footer .news .thempage .wrap .box .content.active .themTitle::after {
   border-color: transparent transparent #141414 transparent;
 }
+@media only screen and (max-width: 1570px) {
+  html footer .news .thempage .wrap .box .content .themTitle {
+    width: 143px;
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  html footer .news .thempage .wrap .box .content .themTitle {
+    width: 129px;
+    font-size: 15px;
+  }
+}
 html footer .news .thempage .wrap .box:first-child.short ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1410,6 +1530,19 @@ html footer .news .thempage .wrap .box:first-child.short ul {
 }
 html footer .news .thempage .wrap .box:first-child.short ul li {
   width: 50%;
+}
+@media only screen and (max-width: 1000px) {
+  html footer .news .thempage .wrap .box:first-child.short ul li {
+    width: 60%;
+  }
+  html footer .news .thempage .wrap .box:first-child.short ul li i {
+    margin: 0 3px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  html footer .news .thempage .wrap .box .content {
+    padding: 68px 17px 30px;
+  }
 }
 html footer .news .aboutUS {
   width: 100%;
@@ -1444,10 +1577,11 @@ html footer .news .aboutUS .btn .shadow {
   border: 1px solid #141414;
   color: #141414;
   font-weight: bold;
+  margin-right: 30px;
   position: relative;
 }
 html footer .news .aboutUS .btn .shadow button {
-  width: 201px;
+  width: 100%;
   height: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1484,8 +1618,13 @@ html footer .news .aboutUS .btn .shadow:last-child {
 html footer .news .aboutUS .btn .shadow:last-child button {
   background: #ffffff;
 }
+@media only screen and (max-width: 1000px) {
+  html footer .news .aboutUS .btn .shadow {
+    margin-right: 8px;
+  }
+}
 html footer .news .aboutUS .social {
-  width: 50%;
+  width: 40%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1497,7 +1636,6 @@ html footer .news .aboutUS .social {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 65px;
 }
 html footer .news .aboutUS .social div {
   width: 60px;
@@ -1513,6 +1651,12 @@ html footer .news .aboutUS .social div:hover, html footer .news .aboutUS .social
           transform: translate(5px, 5px);
   -webkit-filter: drop-shadow(0px 0px 0.5px #141414);
           filter: drop-shadow(0px 0px 0.5px #141414);
+}
+@media only screen and (max-width: 1375px) {
+  html footer .news .aboutUS .social div {
+    width: 43px;
+    height: 43px;
+  }
 }
 html footer .line_deco {
   width: 2px;
@@ -1569,6 +1713,11 @@ html footer .partner .title .deco {
 html footer .partner .title .arrow_deco {
   width: 67px;
   height: 15px;
+}
+@media only screen and (max-width: 1000px) {
+  html footer .partner .title .arrow_deco {
+    width: 113px;
+  }
 }
 html footer .company {
   width: 100%;
@@ -1722,6 +1871,23 @@ html footer .company .clogo.dg {
   width: 75px;
   height: 39px;
 }
+@media only screen and (max-width: 1500px) {
+  html footer .company .clogo {
+    margin: 0px 23px 26px 0;
+  }
+}
+@media only screen and (max-width: 1415px) {
+  html footer .company .clogo {
+    margin: 0px 16px 23px 0;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  html footer .company .clogo {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    margin: 0px 8px 20px 0;
+  }
+}
 html footer .copyright {
   width: 100%;
   height: auto;
@@ -1767,4 +1933,45 @@ html footer .copyright p::after {
           transform: rotate(-180deg);
   position: absolute;
   right: -70px;
+}
+@media only screen and (max-width: 1000px) {
+  html footer .copyright p {
+    font-size: 13px;
+  }
+  html footer .copyright p::before {
+    width: 28px;
+    left: -36px;
+  }
+  html footer .copyright p::after {
+    width: 26px;
+    right: -35px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  html footer .copyright p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  html footer .copyright p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 1152px) {
+  html footer .copyright p {
+    font-size: 13px;
+  }
+  html footer .copyright p::before {
+    width: 39px;
+    left: -51px;
+  }
+  html footer .copyright p::after {
+    width: 39px;
+    right: -51px;
+  }
+}
+@media only screen and (max-width: 1094px) {
+  html footer .copyright p::before, html footer .copyright p::after {
+    display: none;
+  }
 }

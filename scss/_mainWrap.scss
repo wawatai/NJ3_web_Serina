@@ -66,6 +66,44 @@
             width: 100%;
             height: 100%;
 
+            &.swiperHG {
+                position: relative;
+                --swiper-navigation-color: transparent;/* 单独设置按钮颜色 */
+                --swiper-navigation-size: 40px;/* 设置按钮大小 */
+
+                .outter {
+                    position: relative;
+
+                    .swiper-wrapper {
+                        overflow: hidden;
+                    }
+
+                    .swiper-button-prev {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 15px 25px 15px 0;
+                        border-color:  transparent $sub_color transparent transparent;
+                        position: absolute;
+                        top: 103px;
+                        left: -71px;
+                    }
+            
+                    .swiper-button-next {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 15px  0 15px 25px;
+                        border-color:  transparent transparent transparent $sub_color;
+                        position: absolute;
+                        top: 103px;
+                        right: -71px;
+                    }
+                }
+
+                
+            }
+
             .outter {
 
                 .swiper-wrapper {
@@ -164,7 +202,7 @@
 
                         p {
                             color: $sub_font;
-                            text-shadow: 0px 0px 5px $sub_font;
+                            // text-shadow: 0px 0px 5px $sub_font;
                         }
 
                         &::before { 
@@ -264,7 +302,7 @@
 
                         p {
                             color: $sub_font;
-                            text-shadow: 0px 0px 5px $sub_font;
+                            // text-shadow: 0px 0px 5px $sub_font;
                         }
 
 
