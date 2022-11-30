@@ -2,7 +2,6 @@ footer {
     width: 100%;
     height: auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     background: $main_color;
     padding: 27px;
@@ -10,25 +9,29 @@ footer {
     .news {
         width: 50%;
         height: auto;
+        border-right: solid 2px $sub_color;
         display: flex;
         flex-direction: column;
+        padding-right: 35px;
 
         .thempage {
             width: auto;
-            height: 437px;
+            height: auto;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
             margin-bottom: 20px;
 
             .wrap {
                 width: 100%;
-                height: 40%;
+                height: auto;
                 display: flex;
                 flex-shrink: 0;
                 justify-content: space-around;
-                align-items: center;
+                align-items: flex-start;
 
+                &:nth-of-type(1){
+                    margin-bottom: 45px;
+                }
 
                 .box {
                     position: relative;
@@ -46,10 +49,9 @@ footer {
                         height: 100%;
                         @include borderBlock;
                         border: 2px solid $main_border;
-                        padding: 68px 25px 30px;
-                        position: absolute;
-                        bottom: -10px;
-                        right: -10px;
+                        padding: 68px 0 30px 15px;
+                        transform: translate(10px,10px);
+                        transition: 0.3s;
 
                         .themTitle {
                             @include themeTag;
@@ -58,20 +60,18 @@ footer {
                         ul {
                             width: 100%;
                             height: 100%;
-                            display: grid;
-                            grid-template-columns: repeat(2,50%);
+                            display: flex;
+                            flex-wrap: wrap;
 
                             li {
-                                width: 100%;
+                                width: 195px;
                                 height: 25px;
                                 display: flex;
                                 align-items: center;
                                 color: $main_font;
-                                white-space: nowrap; 
-                                overflow: hidden; 
-                                text-overflow: ellipsis;
                                 padding: 0 5px;
                                 cursor: pointer;
+                                transition: 0.5s;
 
                                 i {
                                     width: 0;
@@ -86,24 +86,17 @@ footer {
                                     background: $sub_color;
                                     color: $sub_font;
                                     text-shadow: 0px 0px 5px $sub_font;
-                                    transition: 0.5s;
 
                                     i {
                                         filter: brightness(100);
                                     }
                                 }
                             }
-                            @media only screen and (max-width: 1000px) {
-                                li {
-                                    font-size: 12px;
-                                    padding: 0px;
-                                }
-                            }
+                           
                         }
 
                         &:hover,&:active,&.active {
-                            transform: translate(-10px,-10px);
-                            transition: 0.3s;
+                            transform: translate(0,0);
 
                             .themTitle {
                                 background: $sub_color;
@@ -117,19 +110,6 @@ footer {
                                 }
                             }
                         }
-
-                        @media only screen and (max-width: 1570px) {
-                            .themTitle {
-                                width: 143px;
-                                font-size: 17px;
-                            }
-                        }
-                        @media only screen and (max-width: 1000px) {
-                            .themTitle {
-                                width: 129px;
-                                font-size: 15px;
-                            }
-                        }
                     }
 
                     &:first-child {
@@ -141,31 +121,17 @@ footer {
                                 li {
                                     width: 50%;
                                 }
-                                @media only screen and (max-width: 1000px) {
-                                    li {
-                                        width: 60%;
-
-                                        i {
-                                            margin: 0 3px;
-                                        }
-                                    }
-                                }
                             }
                         }
                     }
-                    @media only screen and (max-width: 1000px) {
-                        .content {
-                            padding: 68px 17px 30px;
-                        }
-                    }
                 }
-               
             }
+            
         }
 
         .aboutUS {
             width: 100%;
-            height: 20%;
+            height: auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -177,9 +143,11 @@ footer {
                 align-items: center;
                 justify-content: space-around;
                 margin-top: 10px;
+                
 
                 .shadow {
-                    width: 201px;
+                    width: 100%;
+                    min-width: 121px;
                     height: 54px;
                     @include borderBlock;
                     margin-right: 30px;
@@ -187,6 +155,7 @@ footer {
                    
                     button {
                         width: 100%;
+                        min-width: 119px;
                         height: 54px;
                         display: flex;
                         align-items: center;
@@ -218,11 +187,8 @@ footer {
                             background: $sub02_color;
                         }
                     }
-                }
-                @media only screen and (max-width: 1000px){
-                    .shadow {
-                        margin-right: 8px;
-                    }
+
+                    
                 }
             }
             .social {
@@ -235,8 +201,9 @@ footer {
                 // padding: 0 65px;
 
                 div {
-                    width: 60px;
-                    height: 60px;
+                    width: 17%;
+                    height: 0;
+                    padding-top: 17%;
                     overflow: hidden;
                     filter: drop-shadow(5px 5px 0.5px $sub_color);
 
@@ -246,28 +213,74 @@ footer {
                         filter: drop-shadow(0px 0px 0.5px $sub_color);
                     }
                 }
-                @media only screen and (max-width: 1375px) {
+            }
+        }
+
+        @media only screen and (max-width: 1400px) {
+            
+            .thempage {
+
+                .wrap {
+                    flex-wrap: wrap;
+
+                    .box {
+                        width: 100% !important;
+                        height: auto !important;
+
+                        &:first-child {
+                            margin-bottom: 45px;
+                        }
+
+                        .content {
+
+                            ul {
+
+                                li {
+                                    width: 51%;
+                                    margin-bottom: 10px;
+
+                                    &:last-child {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .aboutUS {
+                flex-direction: column;
+
+                .btn {
+                    width: 100%;
+                    margin-top: 45px;
+
+                    .shadow {
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .social {
+                    width: 60%;
+                    margin-top: 20px;
+
                     div {
-                        width: 43px;
-                        height: 43px;
+                        width: 60px;
+                        height: 60px;
                     }
                 }
             }
         }
     }
 
-    .line_deco {
-        width: 2px;
-        height: 559px;
-        background: $main_border;
-        margin: auto 35px;
-    }
-
     .partner {
         width: 50%;
         height: auto;
-        display: flex;
-        flex-direction: column;
+        padding-left: 35px;
 
         .title {
             width: 100%;
@@ -281,6 +294,7 @@ footer {
                 font-size: 20px;
                 font-weight: bold;
                 white-space: nowrap;
+                flex-shrink: 0;
                 position: relative;
                 z-index: 5;
 
@@ -306,272 +320,223 @@ footer {
             .arrow_deco {
                 width: 67px;
                 height: 15px;
+                flex-shrink: 0;
             }
         }
 
-        @media only screen and (max-width: 1000px) {
-        .title {
-            .arrow_deco {
-                width: 113px;
-            }
-        }
-    }
-    }
-
-    .company {
-        width: 100%;
-        height: auto;
-        
-        .clogo {
-            display: inline-block;
-            vertical-align: middle;
-            margin: 0 43px 30px 0;
-            cursor: pointer;
-
-            &:hover,&:active,&.active {
-                filter: invert(1);
-                transition: 0.8s transform;
-                transform: rotateY(-360deg);
-            }
-
-            &.net {
-                width: 93px;
-                height: 48px;
-            }
-            &.jili {
-                width: 74px;
-                height: 31px;
-            }
-            &.sp {
-                width: 123px;
-                height: 37px;
-            }
-            &.og {
-                width: 53px;
-                height: 45px;
-            }
-            &.qs {
-                width: 110px;
-                height: 28px;
-            }
-            &.auxx {
-                width: 138px;
-                height: 35px;
-            }
-            &.sa {
-                width: 103px;
-                height: 37px;
-            }
-            &.elk {
-                width: 95px;
-                height: 38px;
-            }
-            &.bluep {
-                width: 140px;
-                height: 30px;
-            }
-            &.evlout {
-                width: 135px;
-                height: 28px;
-            }
-            &.tpg {
-                width: 108px;
-                height: 36px;
-            }
-            &.rsg {
-                width: 70px;
-                height: 41px;
-            }
-            &.ag {
-                width: 109px;
-                height: 36px;
-            }
-            &.player {
-                width: 138px;
-                height: 33px;
-            }
-            &.ab {
-                width: 100px;
-                height: 34px;
-            }
-            &.pls {
-                width: 170px;
-                height: 28px;
-            }
-            &.pg {
-                width: 125px;
-                height: 32px;
-            }
-            &.png {
-                width: 115px;
-                height: 33px;
-            }
-            &.micro {
-                width: 133px;
-                height: 34px;
-            }
-            &.pp {
-                width: 96px;
-                height: 43px;
-            }
-            &.redrake {
-                width: 77px;
-                height: 48px;
-            }
-            &.gh {
-                width: 59px;
-                height: 41px;
-            }
-            &.ygg {
-                width: 132px;
-                height: 35px;
-            }
-            &.rela {
-                width: 100px;
-                height: 33px;
-            }
-            &.rt {
-                width: 102px;
-                height: 44px;
-            }
-            &.bng {
-                width: 101px;
-                height: 31px;
-            }
-            &.wm {
-                width: 42px;
-                height: 42px;
-            }
-            &.b36 {
-                width: 99px;
-                height: 38px;
-            }
-            &.ifun {
-                width: 124px;
-                height: 37px;
-            }
-            &.ely {
-                width: 135px;
-                height: 31px;
-            }
-            &.nolimt {
-                width: 120px;
-                height: 34px;
-            }
-            &.evo {
-                width: 135px;
-                height: 28px;
-            }
-            &.dg {
-                width: 75px;
-                height: 39px;
-            }
-        }
-        @media only screen and (max-width: 1500px) {
+        .company {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            
             .clogo {
-                margin: 0px 23px 26px 0;
+                margin: 0 45px 30px 0;
+                cursor: pointer;
+    
+                &:hover,&:active,&.active {
+                    filter: invert(1);
+                    transition: 0.8s transform;
+                    transform: rotateY(-360deg);
+                }
+    
+                &.net {
+                    width: 93px;
+                    height: 48px;
+                }
+                &.jili {
+                    width: 74px;
+                    height: 31px;
+                }
+                &.sp {
+                    width: 123px;
+                    height: 37px;
+                }
+                &.og {
+                    width: 53px;
+                    height: 45px;
+                }
+                &.qs {
+                    width: 110px;
+                    height: 28px;
+                }
+                &.auxx {
+                    width: 138px;
+                    height: 35px;
+                }
+                &.sa {
+                    width: 103px;
+                    height: 37px;
+                }
+                &.elk {
+                    width: 95px;
+                    height: 38px;
+                }
+                &.bluep {
+                    width: 140px;
+                    height: 30px;
+                }
+                &.evlout {
+                    width: 135px;
+                    height: 28px;
+                }
+                &.tpg {
+                    width: 108px;
+                    height: 36px;
+                }
+                &.rsg {
+                    width: 70px;
+                    height: 41px;
+                }
+                &.ag {
+                    width: 109px;
+                    height: 36px;
+                }
+                &.player {
+                    width: 138px;
+                    height: 33px;
+                }
+                &.ab {
+                    width: 100px;
+                    height: 34px;
+                }
+                &.pls {
+                    width: 170px;
+                    height: 28px;
+                }
+                &.pg {
+                    width: 125px;
+                    height: 32px;
+                }
+                &.png {
+                    width: 115px;
+                    height: 33px;
+                }
+                &.micro {
+                    width: 133px;
+                    height: 34px;
+                }
+                &.pp {
+                    width: 96px;
+                    height: 43px;
+                }
+                &.redrake {
+                    width: 77px;
+                    height: 48px;
+                }
+                &.gh {
+                    width: 59px;
+                    height: 41px;
+                }
+                &.ygg {
+                    width: 132px;
+                    height: 35px;
+                }
+                &.rela {
+                    width: 100px;
+                    height: 33px;
+                }
+                &.rt {
+                    width: 102px;
+                    height: 44px;
+                }
+                &.bng {
+                    width: 101px;
+                    height: 31px;
+                }
+                &.wm {
+                    width: 42px;
+                    height: 42px;
+                }
+                &.b36 {
+                    width: 99px;
+                    height: 38px;
+                }
+                &.ifun {
+                    width: 124px;
+                    height: 37px;
+                }
+                &.ely {
+                    width: 135px;
+                    height: 31px;
+                }
+                &.nolimt {
+                    width: 120px;
+                    height: 34px;
+                }
+                &.evo {
+                    width: 135px;
+                    height: 28px;
+                }
+                &.dg {
+                    width: 75px;
+                    height: 39px;
+                }
             }
         }
-        @media only screen and (max-width: 1415px) {
-            .clogo {
-                margin: 0px 16px 23px 0;
-            }
-        }
-        @media only screen and (max-width: 1399px) {
-            .clogo {
-                transform: scale(0.8);
-                margin: 0px 8px 20px 0;
-            }
-        }
-    }
-
-    .copyright {
-        width: 100%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        p {
-            width: auto;
-            height: 35px;
+    
+        .copyright {
+            width: 100%;
+            height: auto;
             display: flex;
             align-items: center;
-            padding: 10px; 
-            position: relative;
-
-            @include borderBlock;
-            border: 2px solid $main_border;
-
-            &::before {
-                content: "";
-                width: 51px;
-                height: 15px;
-                position: absolute;
-                left: -70px;
-            }
-
-            &::after {
-                content: "";
-                width: 51px;
-                height: 15px;
-                transform: rotate(-180deg);
-                position: absolute;
-                right: -70px;
-            }
-        }
-
-        @media only screen and (max-width: 1000px) {
+            justify-content: center;
+    
             p {
-                font-size: 13px;
-
+                width: auto;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                padding: 10px; 
+                position: relative;
+    
+                @include borderBlock;
+                border: 2px solid $main_border;
+    
                 &::before {
-                    width: 28px;
-                    left: -36px;
+                    content: "";
+                    width: 51px;
+                    height: 15px;
+                    position: absolute;
+                    left: -70px;
                 }
+    
                 &::after {
-                    width: 26px;
-                    right: -35px;
+                    content: "";
+                    width: 51px;
+                    height: 15px;
+                    transform: rotate(-180deg);
+                    position: absolute;
+                    right: -70px;
                 }
             }
         }
-    }
-    @media only screen and (max-width: 1399px) {
-        .copyright {
-            p {
-                font-size: 15px;
-            }
-        }
-    }
-    @media only screen and (max-width: 1280px) {
-        .copyright {
-            p {
-                font-size: 13px;
-            }
-        }
-    }
-    @media only screen and (max-width: 1152px) {
-        .copyright {
-            p {
-                font-size: 13px;
 
-                &::before {
-                    width: 39px;
-                    left: -51px;
-                }
-                &::after {
-                    width: 39px;
-                    right: -51px;
+        @media only screen and (max-width: 1400px) {
+            
+            .company {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 45px;
+                padding: 0 8%;
+
+                .clogo {
+                    width: auto !important;
+                    margin: 0;
                 }
             }
-        }
-    }
-    @media only screen and (max-width: 1094px) {
-        .copyright {
-            p {
-                &::before,
-                &::after {
-                    display: none;
+
+            .copyright {
+                margin-top: 45px;
+
+                p {
+                    font-size: 14px;
+
+                    &::before,
+                    &::after {
+                        display: none;
+                    }
                 }
             }
         }

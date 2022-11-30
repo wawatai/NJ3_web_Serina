@@ -11,6 +11,10 @@ $sub_font: #ffffff;
 $main_border: $sub_color;
 $sub_border: #ffffff;
 
+//scrollBar
+$scrollBar_thumb: #fed8008c;
+$scrollBar_track: #ffffff7a;
+
 //輪播分頁圓點
 $swiper-pagination-bullet: #ffffff7a;
 
@@ -74,5 +78,23 @@ $board_lightBtn: #ffa04b;
         position: absolute;
         bottom: 0;
         right: -15px;
+    }
+}
+
+@mixin scrollBar {
+    
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $scrollBar_thumb;
+        border-radius: 15px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $scrollBar_track;
+        border-radius: 15px;
     }
 }

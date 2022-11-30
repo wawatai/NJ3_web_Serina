@@ -1,39 +1,4 @@
 @charset "UTF-8";
-@media only screen and (max-width: 1860px) {
-  header .bottom ul li .content {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 1795px) {
-  header .bottom ul li .content {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 1680px) {
-  header .bottom {
-    padding: 0 20px 0 408px;
-  }
-  header .bottom ul li {
-    overflow: hidden;
-  }
-  header .bottom ul li .content {
-    font-size: 14px;
-  }
-  header .bottom ul li .content:hover .content, header .bottom ul li .content:active .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transform: translate(7px, 6px);
-            transform: translate(7px, 6px);
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-}
-@media only screen and (max-width: 1570px) {
-  .marquee {
-    display: none;
-  }
-}
 header .loginArea {
   background: url(../img/login_BG.png) no-repeat;
   background-size: contain;
@@ -117,7 +82,7 @@ footer .arrow_deco {
 
 footer .thempage .box {
   background: url(../img/them_shadow.png) no-repeat top;
-  background-size: 100%;
+  background-size: cover;
 }
 
 footer .line {
@@ -148,172 +113,172 @@ footer .copyright p::after {
 
 .clogo.net {
   background: url(../img/cooperation/NETENT.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.jili {
   background: url(../img/cooperation/JILI.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.sp {
   background: url(../img/cooperation/SP.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.og {
   background: url(../img/cooperation/OG.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.qs {
   background: url(../img/cooperation/QUICKSPIN.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.auxx {
   background: url(../img/cooperation/auxx.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.sa {
   background: url(../img/cooperation/sa.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.elk {
   background: url(../img/cooperation/ELK.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.bluep {
   background: url(../img/cooperation/BLUEPRINT.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.evlout {
   background: url(../img/cooperation/EVO.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.tpg {
   background: url(../img/cooperation/TPG.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.rsg {
   background: url(../img/cooperation/RSG.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.ag {
   background: url(../img/cooperation/AG.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.player {
   background: url(../img/cooperation/4THEPLAYER.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.ab {
   background: url(../img/cooperation/AB.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.pls {
   background: url(../img/cooperation/PLS.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.pg {
   background: url(../img/cooperation/PG.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.png {
   background: url(../img/cooperation/PNG.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.micro {
   background: url(../img/cooperation/MG.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.pp {
   background: url(../img/cooperation/PP.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.redrake {
   background: url(../img/cooperation/REDRAKE.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.gh {
   background: url(../img/cooperation/GOLDEN\ HERO.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.ygg {
   background: url(../img/cooperation/YGG.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.rela {
   background: url(../img/cooperation/RELAX.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.rt {
   background: url(../img/cooperation/RED\ TIGER.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.bng {
   background: url(../img/cooperation/BNG.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.wm {
   background: url(../img/cooperation/WM.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.ball36 {
   background: url(../img/cooperation/36588.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.b36 {
   background: url(../img/cooperation/36588.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.ifun {
   background: url(../img/cooperation/IFUN.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.ely {
   background: url(../img/cooperation/ELY.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.nolimt {
   background: url(../img/cooperation/NOLIMIT.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.evo {
   background: url(../img/cooperation/EVO.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .clogo.dg {
   background: url(../img/cooperation/DG.png) no-repeat center;
-  background-size: 100%;
+  background-size: contain;
 }
 
 html {
@@ -624,7 +589,7 @@ html header .bottom ul {
           align-items: center;
 }
 html header .bottom ul li {
-  width: 11.25%;
+  width: auto;
   height: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,7 +599,6 @@ html header .bottom ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 28px;
   background: transparent;
   color: #ffffff;
   font-size: 20px;
@@ -648,8 +612,15 @@ html header .bottom ul li:hover, html header .bottom ul li:active {
   background: #fed600;
 }
 html header .bottom ul li:hover .content, html header .bottom ul li:active .content {
-  width: 100%;
-  height: 35px;
+  border-color: #ffffff;
+  -webkit-transform: translate(-7px, -6px);
+          transform: translate(-7px, -6px);
+  -webkit-animation: rote 0.3s ease-in-out 0s;
+          animation: rote 0.3s ease-in-out 0s;
+}
+html header .bottom ul li .content {
+  width: auto;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -660,91 +631,119 @@ html header .bottom ul li:hover .content, html header .bottom ul li:active .cont
       -ms-flex-pack: center;
           justify-content: center;
   background: #141414;
-  border: 3px solid #ffffff;
-  padding: 20px 30px;
+  border: 3px solid transparent;
+  -webkit-transform-origin: top;
+          transform-origin: top;
   white-space: nowrap;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(-7px, -6px);
-          transform: translate(-7px, -6px);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  padding: 0 15px;
+}
+@-webkit-keyframes rote {
+  0% {
+    -webkit-transform: translate(0, 0) rotateX(60deg);
+            transform: translate(0, 0) rotateX(60deg);
+  }
+  100% {
+    -webkit-transform: translate(-7px, -6px) rotateX(0deg);
+            transform: translate(-7px, -6px) rotateX(0deg);
+  }
+}
+@keyframes rote {
+  0% {
+    -webkit-transform: translate(0, 0) rotateX(60deg);
+            transform: translate(0, 0) rotateX(60deg);
+  }
+  100% {
+    -webkit-transform: translate(-7px, -6px) rotateX(0deg);
+            transform: translate(-7px, -6px) rotateX(0deg);
+  }
+}
+@media only screen and (max-width: 1870px) {
+  html header .bottom ul {
+    padding-left: 10px;
+    overflow: overlay;
+  }
+  html header .bottom ul::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  html header .bottom ul::-webkit-scrollbar-thumb {
+    background: rgba(254, 216, 0, 0.5490196078);
+    border-radius: 15px;
+  }
+  html header .bottom ul::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.4784313725);
+    border-radius: 15px;
+  }
 }
 html .ad {
   width: 100%;
-  height: 50%;
+  height: auto;
+  max-height: 500px;
   margin-top: 120px;
   position: relative;
+  overflow: hidden;
 }
-html .ad.swiper {
-  position: relative;
-  --swiper-navigation-color: transparent; /* 单独设置按钮颜色 */
-  --swiper-navigation-size: 40px; /* 设置按钮大小 */
+html .ad.swiper .swiper-slide {
+  height: auto !important;
+  font-size: 0;
 }
-html .ad.swiper .swiper-wrapper {
+html .ad.swiper .swiper-slide img {
   width: 100%;
-  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 html .ad.swiper .swiper-button-prev {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 10px 15px 10px 0;
-  border-color: transparent #141414 transparent transparent;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  border-width: 0 10px 15px 10px;
+  border-color: #141414 transparent;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
   position: absolute;
-  top: 122px;
-  left: 23px;
+  top: 28%;
+  left: 10px;
+}
+html .ad.swiper .swiper-button-prev::before, html .ad.swiper .swiper-button-prev::after {
+  content: "";
 }
 html .ad.swiper .swiper-button-next {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 10px 15px 10px 0;
-  border-color: transparent #141414 transparent transparent;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  border-width: 15px 10px 0 10px;
+  border-color: #141414 transparent;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
   position: absolute;
-  top: 340px;
-  left: 23px;
+  top: 77%;
+  left: 10px;
 }
-html .ad.swiper .swiper-pagination {
-  width: auto !important;
-  left: auto !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 219px;
-  right: 1866px;
-  z-index: 10;
+html .ad.swiper .swiper-button-next::before, html .ad.swiper .swiper-button-next::after {
+  content: "";
 }
-html .ad.swiper .swiper-pagination .swiper-pagination-bullet {
-  width: 14px !important;
-  height: 14px !important;
-  text-align: center;
-  font-size: 12px;
-  opacity: 1;
-  border-radius: 100%;
+html .ad.swiper .swiper-pagination-bullets {
+  right: unset;
+  left: 25px;
+}
+html .ad.swiper .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
   background: rgba(255, 255, 255, 0.4784313725);
-  cursor: pointer;
+  opacity: 0.4;
+  margin: 10px 0;
 }
-html .ad.swiper .swiper-pagination .swiper-pagination-bullet-active {
+html .ad.swiper .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background: #ffffff;
+  opacity: 1;
 }
-html .marquee {
-  width: 350px;
-  height: 384px;
+html .ad .marquee {
+  width: 18.36%;
+  height: 80%;
   background: #ffffff;
   padding: 27px 37px 27px 20px;
   position: absolute;
@@ -752,55 +751,55 @@ html .marquee {
   right: 54px;
   z-index: 50;
 }
-html .marquee .outter_deco {
-  width: 350px;
-  height: 384px;
+html .ad .marquee .outter_deco {
+  width: 98%;
+  height: 99%;
   border: 3px solid #141414;
   position: absolute;
   top: -15px;
   left: -15px;
 }
-html .marquee .outter_deco .yDeco {
-  width: 69px;
-  height: 69px;
+html .ad .marquee .outter_deco .yDeco {
+  width: 20%;
+  height: 18%;
   background: #fed600;
-  border-radius: 50px;
+  border-radius: 100%;
   position: absolute;
   bottom: 30px;
   right: -50px;
   z-index: 5;
 }
-html .marquee .outter_deco .bDeco {
-  width: 115px;
-  height: 115px;
-  border-radius: 100px;
+html .ad .marquee .outter_deco .bDeco {
+  width: 32%;
+  height: 28%;
+  border-radius: 100%;
   overflow: hidden;
   position: absolute;
   bottom: -37px;
   right: -35px;
   z-index: 10;
 }
-html .marquee .outter_deco .cover {
-  width: 101px;
-  height: 99px;
+html .ad .marquee .outter_deco .cover {
+  width: 30%;
+  height: 27%;
   background: #ffffff;
-  border-radius: 228px 0 0 0;
+  border-radius: 100% 0 0 0;
   position: absolute;
   bottom: -10px;
   right: -12px;
   z-index: 1;
 }
-html .marquee .outter_deco .cover::before {
+html .ad .marquee .outter_deco .cover::before {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 41%;
+  height: 77%;
   border-radius: 50px 0 0 50px;
   background: #ffffff;
   position: absolute;
-  bottom: 91px;
-  right: -6px;
+  bottom: 40px;
+  right: 0px;
 }
-html .marquee .outter_deco::before {
+html .ad .marquee .outter_deco::before {
   content: "";
   width: 3px;
   height: 15px;
@@ -810,7 +809,7 @@ html .marquee .outter_deco::before {
   top: 20px;
   left: 82px;
 }
-html .marquee .outter_deco::after {
+html .ad .marquee .outter_deco::after {
   content: "";
   width: 15px;
   height: 3px;
@@ -820,7 +819,7 @@ html .marquee .outter_deco::after {
   top: 25.5px;
   left: 76px;
 }
-html .marquee .title {
+html .ad .marquee .title {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -830,17 +829,19 @@ html .marquee .title {
       -ms-flex-align: center;
           align-items: center;
 }
-html .marquee .title p {
+html .ad .marquee .title p {
   color: #141414;
-  font-size: 20px;
+  font-size: 1vw;
   font-weight: bold;
   white-space: nowrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: relative;
 }
-html .marquee .title p .first {
-  font-size: 25px;
+html .ad .marquee .title p .first {
+  font-size: 1.2vw;
 }
-html .marquee .title p .deco {
+html .ad .marquee .title p .deco {
   width: 48px;
   height: 48px;
   background: #fed600;
@@ -850,27 +851,29 @@ html .marquee .title p .deco {
   left: -8px;
   z-index: -1;
 }
-html .marquee .title .deco_line {
+html .ad .marquee .title .deco_line {
   width: 100%;
   height: 2px;
   margin: 5px 10px 0px 10px;
   background: #141414;
 }
-html .marquee .title .arrow_deco {
-  width: 200px;
+html .ad .marquee .title .arrow_deco {
+  width: 20%;
   height: 17px;
   margin: 5px 0px 0px;
   overflow: hidden;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
-html .marquee .textBox {
+html .ad .marquee .textBox {
   width: 100%;
-  height: 285px;
+  height: 90%;
   margin-top: 15px;
   overflow: hidden;
 }
-html .marquee .textBox .content {
+html .ad .marquee .textBox .content {
   color: #141414;
-  font-size: 18px;
+  font-size: 0.9vw;
   font-weight: bolder;
   padding-bottom: 10px;
   -webkit-animation: toTop 5s linear infinite;
@@ -965,42 +968,19 @@ html .mainWrap .hotGame .hotgameTitle p span i {
   left: -11px;
   z-index: -1;
 }
-html .mainWrap .hotGame .hott {
+html .mainWrap .hotGame .swiperBox {
+  width: 90%;
+  height: 230px;
+  margin: 0 auto;
+  position: relative;
+}
+html .mainWrap .hotGame .swiperBox .swiperHG {
   width: 100%;
   height: 100%;
-}
-html .mainWrap .hotGame .hott.swiperHG {
-  position: relative;
-  --swiper-navigation-color: transparent; /* 单独设置按钮颜色 */
-  --swiper-navigation-size: 40px; /* 设置按钮大小 */
-}
-html .mainWrap .hotGame .hott.swiperHG .outter {
-  position: relative;
-}
-html .mainWrap .hotGame .hott.swiperHG .outter .swiper-wrapper {
   overflow: hidden;
+  position: relative;
 }
-html .mainWrap .hotGame .hott.swiperHG .outter .swiper-button-prev {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 25px 15px 0;
-  border-color: transparent #141414 transparent transparent;
-  position: absolute;
-  top: 103px;
-  left: -71px;
-}
-html .mainWrap .hotGame .hott.swiperHG .outter .swiper-button-next {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 0 15px 25px;
-  border-color: transparent transparent transparent #141414;
-  position: absolute;
-  top: 103px;
-  right: -71px;
-}
-html .mainWrap .hotGame .hott .outter .swiper-wrapper {
+html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1010,14 +990,23 @@ html .mainWrap .hotGame .hott .outter .swiper-wrapper {
       flex-shrink: 0;
   padding: 16px 0;
 }
-html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox {
+html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide {
   width: 316px;
-  height: auto;
-  margin-right: 30px;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox {
+  width: 303px;
+  height: 100.8%;
   border: 3px solid #141414;
   cursor: pointer;
 }
-html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox:hover .picBox, html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox:active .picBox, html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox.active .picBox {
+html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox:hover .picBox, html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox:active .picBox, html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox.active .picBox {
   background-size: 105%;
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
@@ -1026,20 +1015,20 @@ html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox:hover .picBox, ht
   -webkit-transform: translate(13px, 13px);
           transform: translate(13px, 13px);
 }
-html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox:hover .textArea, html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox:active .textArea, html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox.active .textArea {
+html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox:hover .textArea, html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox:active .textArea, html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox.active .textArea {
   background: #fed600;
 }
-html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox:hover .textArea p, html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox:active .textArea p, html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox.active .textArea p {
+html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox:hover .textArea p, html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox:active .textArea p, html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox.active .textArea p {
   color: #141414;
   font-weight: bold;
 }
-html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox .picArea {
+html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox .picArea {
   width: 100%;
   height: 173px;
   background: #fed600;
   position: relative;
 }
-html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox .picArea .picBox {
+html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox .picArea .picBox {
   width: 102%;
   height: 178px;
   border: 3px solid #141414;
@@ -1047,7 +1036,7 @@ html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox .picArea .picBox 
   top: -16px;
   left: -16px;
 }
-html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox .textArea {
+html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox .textArea {
   width: 100%;
   height: 30px;
   background: #141414;
@@ -1059,20 +1048,39 @@ html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox .textArea {
           align-items: center;
   justify-items: center;
 }
-html .mainWrap .hotGame .hott .outter .swiper-wrapper .gameBox .textArea p {
+html .mainWrap .hotGame .swiperBox .swiperHG .swiper-wrapper .swiper-slide .gameBox .textArea p {
   color: #ffffff;
   font-weight: bold;
   margin: 10px auto;
 }
+html .mainWrap .hotGame .swiperBox .swiper-button-prev02 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 25px 15px 0;
+  border-color: transparent #141414 transparent transparent;
+  position: absolute;
+  top: 103px;
+  left: -71px;
+  cursor: pointer;
+}
+html .mainWrap .hotGame .swiperBox .swiper-button-next02 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 25px;
+  border-color: transparent transparent transparent #141414;
+  position: absolute;
+  top: 103px;
+  right: -71px;
+  cursor: pointer;
+}
 html .mainWrap .gameType {
   width: 100%;
-  height: 733px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1080,20 +1088,19 @@ html .mainWrap .gameType {
 }
 html .mainWrap .gameType .left {
   width: 35%;
-  height: 100%;
+  height: auto;
 }
 html .mainWrap .gameType .left .live {
   width: 95%;
-  height: 100%;
+  height: 0;
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  padding-top: 106%;
 }
 html .mainWrap .gameType .left .live:hover .block, html .mainWrap .gameType .left .live:active .block, html .mainWrap .gameType .left .live.active .block {
   -webkit-transform: scale(1.12);
           transform: scale(1.12);
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
 }
 html .mainWrap .gameType .left .live:hover .textBox, html .mainWrap .gameType .left .live:active .textBox, html .mainWrap .gameType .left .live.active .textBox {
   -webkit-animation: bounce 2s 0.3s ease-in-out infinite;
@@ -1103,8 +1110,8 @@ html .mainWrap .gameType .left .live:hover .textBox p, html .mainWrap .gameType 
   color: #ffffff;
 }
 html .mainWrap .gameType .left .live:hover .textBox::before, html .mainWrap .gameType .left .live:active .textBox::before, html .mainWrap .gameType .left .live.active .textBox::before {
-  -webkit-animation: bounce 3s 0.3s ease-in-out infinite;
-          animation: bounce 3s 0.3s ease-in-out infinite;
+  -webkit-animation: bounce 2s 0.3s ease-in-out infinite;
+          animation: bounce 2s 0.3s ease-in-out infinite;
 }
 @-webkit-keyframes bounce {
   0% {
@@ -1112,18 +1119,13 @@ html .mainWrap .gameType .left .live:hover .textBox::before, html .mainWrap .gam
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  30% {
+  34% {
     border-radius: 1223px 553px 1003px 227px;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  60% {
+  67% {
     border-radius: 836px 485px 538px 109px;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  90% {
-    border-radius: 635px 786px 234px 109px;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
@@ -1139,18 +1141,13 @@ html .mainWrap .gameType .left .live:hover .textBox::before, html .mainWrap .gam
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  30% {
+  34% {
     border-radius: 1223px 553px 1003px 227px;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  60% {
+  67% {
     border-radius: 836px 485px 538px 109px;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  90% {
-    border-radius: 635px 786px 234px 109px;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
@@ -1161,37 +1158,43 @@ html .mainWrap .gameType .left .live:hover .textBox::before, html .mainWrap .gam
   }
 }
 html .mainWrap .gameType .left .block {
-  width: 95%;
-  height: 96%;
+  width: 97.5%;
+  height: 98%;
   position: absolute;
   right: 0;
+  top: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 html .mainWrap .gameType .left .textBox {
-  width: 290px;
-  height: 217px;
+  width: 52%;
+  height: 35%;
   background: #f56fbe;
-  padding: 67px 118px;
   -webkit-filter: drop-shadow(13px -11px 0.5px #141414);
           filter: drop-shadow(13px -11px 0.5px #141414);
   position: absolute;
   border-radius: 456px 283px 299px 82px;
-  left: -52px;
-  bottom: -76px;
+  left: -8%;
+  bottom: -12%;
   z-index: 5;
 }
 html .mainWrap .gameType .left .textBox p {
   color: #141414;
-  font-size: 30px;
+  font-size: 1.8vw;
   font-weight: bold;
   white-space: nowrap;
   text-align: center;
-  position: relative;
+  position: absolute;
+  top: 22%;
+  left: 20%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
   z-index: 10;
 }
 html .mainWrap .gameType .left .textBox::before {
   content: "";
-  width: 234px;
-  height: 195px;
+  width: 81%;
+  height: 89%;
   background: #fe93d2;
   border-radius: 755px 421px 611px 227px;
   position: absolute;
@@ -1205,11 +1208,12 @@ html .mainWrap .gameType .right {
   display: grid;
   -ms-grid-columns: 50% 2.5% 50%;
   grid-template-columns: repeat(2, 50%);
-  gap: 3% 2.5%;
+  gap: 4.8% 2.5%;
 }
 html .mainWrap .gameType .right .typeOutter {
   width: 100%;
-  height: 100%;
+  height: 0;
+  padding-top: 53%;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -1221,8 +1225,8 @@ html .mainWrap .gameType .right .typeOutter:hover .block, html .mainWrap .gameTy
   transition: 0.6s;
 }
 html .mainWrap .gameType .right .typeOutter:hover .textBox, html .mainWrap .gameType .right .typeOutter:active .textBox, html .mainWrap .gameType .right .typeOutter.active .textBox {
-  -webkit-animation: bounce 2s 0.3s ease-in-out infinite;
-          animation: bounce 2s 0.3s ease-in-out infinite;
+  -webkit-animation: bounce 3s 0.3s ease-in-out infinite;
+          animation: bounce 3s 0.3s ease-in-out infinite;
 }
 html .mainWrap .gameType .right .typeOutter:hover .textBox p, html .mainWrap .gameType .right .typeOutter:active .textBox p, html .mainWrap .gameType .right .typeOutter.active .textBox p {
   color: #ffffff;
@@ -1237,23 +1241,20 @@ html .mainWrap .gameType .right .typeOutter:hover .textBox::before, html .mainWr
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  30% {
+  34% {
     border-radius: 642px 664px 77px 36px;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-  60% {
+  67% {
     border-radius: 836px 485px 538px 109px;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-  }
-  90% {
-    border-radius: 635px 786px 234px 109px;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
   100% {
     border-radius: 344px 485px 157px 109px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 html .mainWrap .gameType .right .typeOutter.sport .textBox {
@@ -1280,38 +1281,45 @@ html .mainWrap .gameType .right .typeOutter.board .textBox {
 html .mainWrap .gameType .right .typeOutter.board .textBox::before {
   background: #ffa04b;
 }
+html .mainWrap .gameType .right .typeOutter:nth-of-type(4) .textBox p {
+  top: 5%;
+}
 html .mainWrap .gameType .right .block {
   width: 95%;
   height: 92%;
   position: absolute;
+  top: 0;
   right: 0;
   z-index: 2;
 }
 html .mainWrap .gameType .right .textBox {
-  width: 291px;
-  height: 219px;
+  width: 48%;
+  height: 71%;
   border-radius: 344px 485px 157px 109px;
-  padding: 50px 63px;
   -webkit-filter: drop-shadow(17px -6px 0.5px #141414);
           filter: drop-shadow(17px -6px 0.5px #141414);
   position: absolute;
-  left: -43px;
-  bottom: -97px;
+  left: -8%;
+  bottom: -31%;
   z-index: 5;
 }
 html .mainWrap .gameType .right .textBox p {
   color: #141414;
-  font-size: 30px;
+  font-size: 1.5vw;
   font-weight: bold;
   white-space: nowrap;
   text-align: center;
-  position: relative;
+  position: absolute;
+  top: 16%;
+  left: 0%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
   z-index: 10;
 }
 html .mainWrap .gameType .right .textBox::before {
   content: "";
-  width: 230px;
-  height: 195px;
+  width: 75%;
+  height: 94%;
   border-radius: 344px 520px 261px 424px;
   position: absolute;
   top: 15px;
@@ -1323,9 +1331,6 @@ html footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1335,6 +1340,7 @@ html footer {
 html footer .news {
   width: 50%;
   height: auto;
+  border-right: solid 2px #141414;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1342,10 +1348,11 @@ html footer .news {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-right: 35px;
 }
 html footer .news .thempage {
   width: auto;
-  height: 437px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1353,13 +1360,11 @@ html footer .news .thempage {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin-bottom: 20px;
 }
 html footer .news .thempage .wrap {
   width: 100%;
-  height: 40%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1367,9 +1372,12 @@ html footer .news .thempage .wrap {
       flex-shrink: 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+html footer .news .thempage .wrap:nth-of-type(1) {
+  margin-bottom: 45px;
 }
 html footer .news .thempage .wrap .box {
   position: relative;
@@ -1390,10 +1398,11 @@ html footer .news .thempage .wrap .box .content {
   color: #141414;
   font-weight: bold;
   border: 2px solid #141414;
-  padding: 68px 25px 30px;
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
+  padding: 68px 0 30px 15px;
+  -webkit-transform: translate(10px, 10px);
+          transform: translate(10px, 10px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 html footer .news .thempage .wrap .box .content .themTitle {
   width: 172px;
@@ -1445,13 +1454,14 @@ html footer .news .thempage .wrap .box .content .themTitle::after {
 html footer .news .thempage .wrap .box .content ul {
   width: 100%;
   height: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (50%)[2];
-  grid-template-columns: repeat(2, 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 html footer .news .thempage .wrap .box .content ul li {
-  width: 100%;
+  width: 195px;
   height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1460,11 +1470,10 @@ html footer .news .thempage .wrap .box .content ul li {
       -ms-flex-align: center;
           align-items: center;
   color: #141414;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   padding: 0 5px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 html footer .news .thempage .wrap .box .content ul li i {
   width: 0;
@@ -1478,24 +1487,14 @@ html footer .news .thempage .wrap .box .content ul li:hover, html footer .news .
   background: #141414;
   color: #ffffff;
   text-shadow: 0px 0px 5px #ffffff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 html footer .news .thempage .wrap .box .content ul li:hover i, html footer .news .thempage .wrap .box .content ul li:active i, html footer .news .thempage .wrap .box .content ul li.active i {
   -webkit-filter: brightness(100);
           filter: brightness(100);
 }
-@media only screen and (max-width: 1000px) {
-  html footer .news .thempage .wrap .box .content ul li {
-    font-size: 12px;
-    padding: 0px;
-  }
-}
 html footer .news .thempage .wrap .box .content:hover, html footer .news .thempage .wrap .box .content:active, html footer .news .thempage .wrap .box .content.active {
-  -webkit-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 html footer .news .thempage .wrap .box .content:hover .themTitle, html footer .news .thempage .wrap .box .content:active .themTitle, html footer .news .thempage .wrap .box .content.active .themTitle {
   background: #141414;
@@ -1506,18 +1505,6 @@ html footer .news .thempage .wrap .box .content:hover .themTitle::before, html f
 }
 html footer .news .thempage .wrap .box .content:hover .themTitle::after, html footer .news .thempage .wrap .box .content:active .themTitle::after, html footer .news .thempage .wrap .box .content.active .themTitle::after {
   border-color: transparent transparent #141414 transparent;
-}
-@media only screen and (max-width: 1570px) {
-  html footer .news .thempage .wrap .box .content .themTitle {
-    width: 143px;
-    font-size: 17px;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  html footer .news .thempage .wrap .box .content .themTitle {
-    width: 129px;
-    font-size: 15px;
-  }
 }
 html footer .news .thempage .wrap .box:first-child.short ul {
   display: -webkit-box;
@@ -1531,22 +1518,9 @@ html footer .news .thempage .wrap .box:first-child.short ul {
 html footer .news .thempage .wrap .box:first-child.short ul li {
   width: 50%;
 }
-@media only screen and (max-width: 1000px) {
-  html footer .news .thempage .wrap .box:first-child.short ul li {
-    width: 60%;
-  }
-  html footer .news .thempage .wrap .box:first-child.short ul li i {
-    margin: 0 3px;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  html footer .news .thempage .wrap .box .content {
-    padding: 68px 17px 30px;
-  }
-}
 html footer .news .aboutUS {
   width: 100%;
-  height: 20%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1571,7 +1545,8 @@ html footer .news .aboutUS .btn {
   margin-top: 10px;
 }
 html footer .news .aboutUS .btn .shadow {
-  width: 201px;
+  width: 100%;
+  min-width: 121px;
   height: 54px;
   background: #ffffff;
   border: 1px solid #141414;
@@ -1582,6 +1557,7 @@ html footer .news .aboutUS .btn .shadow {
 }
 html footer .news .aboutUS .btn .shadow button {
   width: 100%;
+  min-width: 119px;
   height: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1618,11 +1594,6 @@ html footer .news .aboutUS .btn .shadow:last-child {
 html footer .news .aboutUS .btn .shadow:last-child button {
   background: #ffffff;
 }
-@media only screen and (max-width: 1000px) {
-  html footer .news .aboutUS .btn .shadow {
-    margin-right: 8px;
-  }
-}
 html footer .news .aboutUS .social {
   width: 40%;
   height: auto;
@@ -1638,8 +1609,9 @@ html footer .news .aboutUS .social {
       justify-content: space-around;
 }
 html footer .news .aboutUS .social div {
-  width: 60px;
-  height: 60px;
+  width: 17%;
+  height: 0;
+  padding-top: 17%;
   overflow: hidden;
   -webkit-filter: drop-shadow(5px 5px 0.5px #141414);
           filter: drop-shadow(5px 5px 0.5px #141414);
@@ -1652,28 +1624,51 @@ html footer .news .aboutUS .social div:hover, html footer .news .aboutUS .social
   -webkit-filter: drop-shadow(0px 0px 0.5px #141414);
           filter: drop-shadow(0px 0px 0.5px #141414);
 }
-@media only screen and (max-width: 1375px) {
-  html footer .news .aboutUS .social div {
-    width: 43px;
-    height: 43px;
+@media only screen and (max-width: 1400px) {
+  html footer .news .thempage .wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-}
-html footer .line_deco {
-  width: 2px;
-  height: 559px;
-  background: #141414;
-  margin: auto 35px;
+  html footer .news .thempage .wrap .box {
+    width: 100% !important;
+    height: auto !important;
+  }
+  html footer .news .thempage .wrap .box:first-child {
+    margin-bottom: 45px;
+  }
+  html footer .news .thempage .wrap .box .content ul li {
+    width: 51%;
+    margin-bottom: 10px;
+  }
+  html footer .news .thempage .wrap .box .content ul li:last-child {
+    margin: 0;
+  }
+  html footer .news .aboutUS {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html footer .news .aboutUS .btn {
+    width: 100%;
+    margin-top: 45px;
+  }
+  html footer .news .aboutUS .btn .shadow:last-child {
+    margin: 0;
+  }
+  html footer .news .aboutUS .social {
+    width: 60%;
+    margin-top: 20px;
+  }
+  html footer .news .aboutUS .social div {
+    width: 60px;
+    height: 60px;
+  }
 }
 html footer .partner {
   width: 50%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-left: 35px;
 }
 html footer .partner .title {
   width: 100%;
@@ -1691,6 +1686,8 @@ html footer .partner .title p {
   font-size: 20px;
   font-weight: bold;
   white-space: nowrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: relative;
   z-index: 5;
 }
@@ -1713,23 +1710,26 @@ html footer .partner .title .deco {
 html footer .partner .title .arrow_deco {
   width: 67px;
   height: 15px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
-@media only screen and (max-width: 1000px) {
-  html footer .partner .title .arrow_deco {
-    width: 113px;
-  }
-}
-html footer .company {
+html footer .partner .company {
   width: 100%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-html footer .company .clogo {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 43px 30px 0;
+html footer .partner .company .clogo {
+  margin: 0 45px 30px 0;
   cursor: pointer;
 }
-html footer .company .clogo:hover, html footer .company .clogo:active, html footer .company .clogo.active {
+html footer .partner .company .clogo:hover, html footer .partner .company .clogo:active, html footer .partner .company .clogo.active {
   -webkit-filter: invert(1);
           filter: invert(1);
   -webkit-transition: 0.8s -webkit-transform;
@@ -1739,156 +1739,139 @@ html footer .company .clogo:hover, html footer .company .clogo:active, html foot
   -webkit-transform: rotateY(-360deg);
           transform: rotateY(-360deg);
 }
-html footer .company .clogo.net {
+html footer .partner .company .clogo.net {
   width: 93px;
   height: 48px;
 }
-html footer .company .clogo.jili {
+html footer .partner .company .clogo.jili {
   width: 74px;
   height: 31px;
 }
-html footer .company .clogo.sp {
+html footer .partner .company .clogo.sp {
   width: 123px;
   height: 37px;
 }
-html footer .company .clogo.og {
+html footer .partner .company .clogo.og {
   width: 53px;
   height: 45px;
 }
-html footer .company .clogo.qs {
+html footer .partner .company .clogo.qs {
   width: 110px;
   height: 28px;
 }
-html footer .company .clogo.auxx {
+html footer .partner .company .clogo.auxx {
   width: 138px;
   height: 35px;
 }
-html footer .company .clogo.sa {
+html footer .partner .company .clogo.sa {
   width: 103px;
   height: 37px;
 }
-html footer .company .clogo.elk {
+html footer .partner .company .clogo.elk {
   width: 95px;
   height: 38px;
 }
-html footer .company .clogo.bluep {
+html footer .partner .company .clogo.bluep {
   width: 140px;
   height: 30px;
 }
-html footer .company .clogo.evlout {
+html footer .partner .company .clogo.evlout {
   width: 135px;
   height: 28px;
 }
-html footer .company .clogo.tpg {
+html footer .partner .company .clogo.tpg {
   width: 108px;
   height: 36px;
 }
-html footer .company .clogo.rsg {
+html footer .partner .company .clogo.rsg {
   width: 70px;
   height: 41px;
 }
-html footer .company .clogo.ag {
+html footer .partner .company .clogo.ag {
   width: 109px;
   height: 36px;
 }
-html footer .company .clogo.player {
+html footer .partner .company .clogo.player {
   width: 138px;
   height: 33px;
 }
-html footer .company .clogo.ab {
+html footer .partner .company .clogo.ab {
   width: 100px;
   height: 34px;
 }
-html footer .company .clogo.pls {
+html footer .partner .company .clogo.pls {
   width: 170px;
   height: 28px;
 }
-html footer .company .clogo.pg {
+html footer .partner .company .clogo.pg {
   width: 125px;
   height: 32px;
 }
-html footer .company .clogo.png {
+html footer .partner .company .clogo.png {
   width: 115px;
   height: 33px;
 }
-html footer .company .clogo.micro {
+html footer .partner .company .clogo.micro {
   width: 133px;
   height: 34px;
 }
-html footer .company .clogo.pp {
+html footer .partner .company .clogo.pp {
   width: 96px;
   height: 43px;
 }
-html footer .company .clogo.redrake {
+html footer .partner .company .clogo.redrake {
   width: 77px;
   height: 48px;
 }
-html footer .company .clogo.gh {
+html footer .partner .company .clogo.gh {
   width: 59px;
   height: 41px;
 }
-html footer .company .clogo.ygg {
+html footer .partner .company .clogo.ygg {
   width: 132px;
   height: 35px;
 }
-html footer .company .clogo.rela {
+html footer .partner .company .clogo.rela {
   width: 100px;
   height: 33px;
 }
-html footer .company .clogo.rt {
+html footer .partner .company .clogo.rt {
   width: 102px;
   height: 44px;
 }
-html footer .company .clogo.bng {
+html footer .partner .company .clogo.bng {
   width: 101px;
   height: 31px;
 }
-html footer .company .clogo.wm {
+html footer .partner .company .clogo.wm {
   width: 42px;
   height: 42px;
 }
-html footer .company .clogo.b36 {
+html footer .partner .company .clogo.b36 {
   width: 99px;
   height: 38px;
 }
-html footer .company .clogo.ifun {
+html footer .partner .company .clogo.ifun {
   width: 124px;
   height: 37px;
 }
-html footer .company .clogo.ely {
+html footer .partner .company .clogo.ely {
   width: 135px;
   height: 31px;
 }
-html footer .company .clogo.nolimt {
+html footer .partner .company .clogo.nolimt {
   width: 120px;
   height: 34px;
 }
-html footer .company .clogo.evo {
+html footer .partner .company .clogo.evo {
   width: 135px;
   height: 28px;
 }
-html footer .company .clogo.dg {
+html footer .partner .company .clogo.dg {
   width: 75px;
   height: 39px;
 }
-@media only screen and (max-width: 1500px) {
-  html footer .company .clogo {
-    margin: 0px 23px 26px 0;
-  }
-}
-@media only screen and (max-width: 1415px) {
-  html footer .company .clogo {
-    margin: 0px 16px 23px 0;
-  }
-}
-@media only screen and (max-width: 1399px) {
-  html footer .company .clogo {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-    margin: 0px 8px 20px 0;
-  }
-}
-html footer .copyright {
+html footer .partner .copyright {
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -1901,7 +1884,7 @@ html footer .copyright {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html footer .copyright p {
+html footer .partner .copyright p {
   width: auto;
   height: 35px;
   display: -webkit-box;
@@ -1918,14 +1901,14 @@ html footer .copyright p {
   font-weight: bold;
   border: 2px solid #141414;
 }
-html footer .copyright p::before {
+html footer .partner .copyright p::before {
   content: "";
   width: 51px;
   height: 15px;
   position: absolute;
   left: -70px;
 }
-html footer .copyright p::after {
+html footer .partner .copyright p::after {
   content: "";
   width: 51px;
   height: 15px;
@@ -1934,44 +1917,26 @@ html footer .copyright p::after {
   position: absolute;
   right: -70px;
 }
-@media only screen and (max-width: 1000px) {
-  html footer .copyright p {
-    font-size: 13px;
+@media only screen and (max-width: 1400px) {
+  html footer .partner .company {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 45px 1fr 45px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    padding: 0 8%;
   }
-  html footer .copyright p::before {
-    width: 28px;
-    left: -36px;
+  html footer .partner .company .clogo {
+    width: auto !important;
+    margin: 0;
   }
-  html footer .copyright p::after {
-    width: 26px;
-    right: -35px;
+  html footer .partner .copyright {
+    margin-top: 45px;
   }
-}
-@media only screen and (max-width: 1399px) {
-  html footer .copyright p {
-    font-size: 15px;
+  html footer .partner .copyright p {
+    font-size: 14px;
   }
-}
-@media only screen and (max-width: 1280px) {
-  html footer .copyright p {
-    font-size: 13px;
-  }
-}
-@media only screen and (max-width: 1152px) {
-  html footer .copyright p {
-    font-size: 13px;
-  }
-  html footer .copyright p::before {
-    width: 39px;
-    left: -51px;
-  }
-  html footer .copyright p::after {
-    width: 39px;
-    right: -51px;
-  }
-}
-@media only screen and (max-width: 1094px) {
-  html footer .copyright p::before, html footer .copyright p::after {
+  html footer .partner .copyright p::before, html footer .partner .copyright p::after {
     display: none;
   }
 }
